@@ -6,6 +6,7 @@
 package helloworld;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  *
@@ -40,4 +41,20 @@ public class DeckOfCards {
         return deckString;
     }
     
+    //This method will shuffle the deck of cards
+    
+    public void shuffle()
+    {
+        Collections.shuffle(deck);
+    }
+    
+    /**
+     * This method will deal a card off the top of the deck
+     * @return a Card object
+     */
+    
+    public Card dealTopCard()
+    {
+        return deck.remove(0);
+    }
 }
